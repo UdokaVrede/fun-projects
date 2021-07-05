@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="overlay" id="overlay">
+        <h4> Searching...</h4>
+    </div>
+    <div class="hero-bg">
+       <section class="top">
+            <header>
+                <a href="#">yummy.eats</a>
+
+                <!-- <nav>
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">projects</a></li>
+                    </ul>
+                </nav> -->
+            </header>
+
+            <h1><span>The Healthy</span> Eating Experience</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi perspiciatis illum nemo deleniti ipsa vero? Incidunt consequatur provident ipsam facilis blanditiis numquam porro dolore, alias tempore fuga et aliquam error quibusdam necessitatibus deserunt possimus corrupti unde illo libero officia quaerat?</p>
+
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="city">Enter your city:</label>
+                        <input type="text" placeholder="Enter your city" name="city" id="city">
+                        <p>Example: "Mbaise"</p>
+                    </div>
+
+                    <input type="button" value="Find food now" id='clickon'>
+                </form>
+            </div>
+       </section> 
+    </div>
+
+    <section class="auth_whole">
+        <div class="right-col">
+            <h2>Authentic. Wholesome</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus voluptas et quisquam quam repellendus sit autem aspernatur, sapiente velit?</p>
+        </div>
+        <img src="images/food.jpg" alt="Picture of a girl performing yoga">
+    </section>
+
+    <script>
+        let buttn = document.getElementById('clickon');
+        let overlay = document.getElementById('overlay');
+        
+        buttn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+        })
+
+    </script>
+</body>
+</html>

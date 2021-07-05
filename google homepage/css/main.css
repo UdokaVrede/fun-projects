@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration:none;
+    font-family: Josefin Sans;
+}
+
+:root{
+    --alt-font: monospace;
+}
+
+.hero{
+    background-image: none;
+    background-color: white;
+    margin:0;
+    padding:0;
+    font-style: normal;
+    font: 1.1em var(Montserrat, --alt-font);
+}
+
+.hero .upper-right{
+    margin-left: 50%;
+}
+
+.center-items{
+    text-align: center;
+    margin-top: 14em;
+}
+
+.google-doodle{
+    font-size: 0px;
+    font-family: 'Roboto', arial, sans-serif;
+}
+
+h1 span{
+    font: bolder;
+    font-size: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+.search-icon span{
+   margin-top: 4.5px;
+   margin-right: 40px;
+   padding: 0;
+   position: absolute;
+
+}
+.search-icon span #img-icon{
+    width:30%;
+    margin-right: 82%;
+    margin-left:10%;
+}
+
+#search-bar{
+    width: 70%;
+    border-radius: .8em;
+    border-width: .1px;
+    border: 1px solid silver;
+    height: 2em;
+    padding-left: 2em;
+    margin-top: 0;
+    margin-bottom: 4em;
+}
+
+.search-icon{
+    padding:2em;
+}
+
+#voice-icon{
+    width:4%;
+}
+
+.voice-search{
+    margin: -105px 0 12px 284px;
+    padding: 0px;
+}
+
+.center-icons{
+    text-align: center;
+    margin:3em 1em;
+    display: grid;
+}
+
+#git-icon{
+    width: 6%;
+}
+.left-col{
+    width: 2px;
+    font-size:.8em;
+    padding-top:12px;
+}
+
+.left-center-icon{
+    margin-left:-12em;
+    margin-top: -2em;
+}
+
+#gmail-icon{
+    width: 7%;
+    height: 33px;
+}
+.right-col{
+    width: 2px;
+    font-size:.8em;
+    padding-top:10px;
+}
+
+.right-center-icon{
+    margin-right:-7em;
+    margin-top: -2.5em;
+    margin-bottom: 5em;
+    place-content: grid;
+}

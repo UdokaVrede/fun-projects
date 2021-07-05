@@ -1,0 +1,103 @@
+border-style: solid,etc
+border-color
+border-wiidth: px, 
+border-radius: curved edges{px, %,}
+background-color:
+margin&padding{top,left,right,bottom}: px
+
+--->line-height property to change the height of each line in a block of text.===spacing
+
+:hover pseudo class selector applies an efect on hover over element.
+
+---> CSS offers the position property to override (CSS treats each HTML element as its own box, which is usually referred to as the) CSS Box Model.
+
+--->Values can be given in relative length units (such as em), absolute length units (such as px), or as a percentage of its containing parent element.
+
+--->With the u tag, the browser applies the CSS of text-decoration: underline; to the element.
+
+--->use the em tag. This displays text as italicized, as the browser applies the CSS of font-style: italic; to the element.
+
+--->use the s tag. It shows that a section of text is no longer valid. With the s tag, the browser applies the CSS of text-decoration: line-through; to the element.
+
+--->hr tag to add a horizontal line across the width of its containing element. This can be used to define a change in topic or to visually separate groups of content.
+
+--->rgba stands for:
+  r = red
+  g = green
+  b = blue
+  a = alpha/level of opacity
+The RGB values can range from 0 to 255. The alpha value can range from 1, which is fully opaque or a solid color, to 0, which is fully transparent or clear. rgba() is great to use in this case, as it allows you to adjust the opacity.
+
+BOX-SHADOW
+The box-shadow property applies one or more shadows to an element.
+
+The box-shadow property takes values for
+
+offset-x (how far to push the shadow horizontally from the element),
+offset-y (how far to push the shadow vertically from the element),
+blur-radius,
+spread-radius and
+color, in that order.
+The blur-radius and spread-radius values are optional.
+Multiple box-shadows can be created by using commas to separate properties of each box-shadow element.
+
+TEXT-TRANSFORM
+The text-transform property in CSS is used to change the appearance of text.
+VALUES: lowercase, uppercase, initial(default), none(default), inherit(Use the text-transform value from the parent element)
+
+
+--->The font-weight property sets how thick or thin characters are in a section of text.
+
+--->When the position of an element is set to relative, it allows you to specify how CSS should move it relative to its current position in the normal flow of the page. It pairs with the CSS offset properties of left or right, and top or bottom. These say how many pixels, percentages, or ems to move the item away from where it is normally positioned. The following example moves the paragraph 10 pixels away from the bottom:
+
+p {
+  position: relative;
+  bottom: 10px;
+}
+
+--->position:absolute
+The next option for the CSS position property is absolute, which locks the element in place relative to its parent container. Unlike the relative position, this removes the element from the normal flow of the document, so surrounding items ignore it. The CSS offset properties (top or bottom and left or right) are used to adjust the position.
+
+One nuance with absolute positioning is that it will be locked relative to its closest positioned ancestor. If you forget to add a position rule to the parent item, (this is typically done using position: relative;), the browser will keep looking up the chain and ultimately default to the body tag.
+
+--->position: fixed
+fixed position, which is a type of absolute positioning that locks an element relative to the browser window. Similar to absolute positioning, it's used with the CSS offset properties and also removes the element from the normal flow of the document. Other items no longer "realize" where it is positioned, which may require some layout adjustments elsewhere.
+
+One key difference between the fixed and absolute positions is that an element with a fixed position won't move when the user scrolls.
+
+The next positioning tool does not actually use position, but sets the float property of an element. Floating elements are removed from the normal flow of a document and pushed to either the left or right of their containing parent element. It's commonly used with the width property to specify how much horizontal space the floated element requires.
+float: right;
+width: 50%;
+
+--->Another positioning technique is to center a block element horizontally. One way to do this is to set its margin to a value of auto.
+
+This method works for images, too. Images are inline elements by default, but can be changed to block elements when you set the display property to block.
+
+Create a Gradual CSS Linear Gradient
+Applying a color on HTML elements is not limited to one flat hue. CSS provides the ability to use color transitions, otherwise known as gradients, on elements. This is accessed through the background property's linear-gradient() function. Here is the general syntax:
+
+background: linear-gradient(gradient_direction, color 1, color 2, color 3, ...);
+The first argument specifies the direction from which color transition starts - it can be stated as a degree, where 90deg makes a horizontal gradient (from left to right) and 45deg makes a diagonal gradient (from bottom left to top right). The following arguments specify the order of colors used in the gradient.
+
+
+---->
+The repeating-linear-gradient() function is very similar to linear-gradient() with the major difference that it repeats the specified gradient pattern. repeating-linear-gradient() accepts a variety of values, but for simplicity, you'll work with an angle value and color stop values in this challenge.
+
+The angle value is the direction of the gradient. Color stops are like width values that mark where a transition takes place, and are given with a percentage or a number of pixels.
+
+In the example demonstrated in the code editor, the gradient starts with the color yellow at 0 pixels which blends into the second color blue at 40 pixels away from the start. Since the next color stop is also at 40 pixels, the gradient immediately changes to the third color green, which itself blends into the fourth color value red as that is 80 pixels away from the beginning of the gradient.
+
+--->
+One way to add texture and interest to a background and have it stand out more is to add a subtle pattern. The key is balance, as you don't want the background to stand out too much, and take away from the foreground. The background property supports the url() function in order to link to an image of the chosen texture or pattern. The link address is wrapped in quotes inside the parentheses.
+
+----->
+To change the scale of an element, CSS has the transform property, along with its scale() function. The following code example doubles the size of all the paragraph elements on the page:
+
+p {
+  transform: scale(2);
+}
+
+
+---->
+transform property is skewX(), which skews the selected element along its X (horizontal) axis by a given degree.
+

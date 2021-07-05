@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),url("/images/back.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form-container{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin: 6% auto;
+    background: white;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px  #ff61241f;
+    border-radius: 30px;
+}
+
+.toggle{
+    position: relative;
+    cursor: pointer;
+    padding:9px 29.6px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+#btn, #reg-btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(45deg, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.social-icon{
+     margin: 30px auto;
+     text-align: center;
+}
+
+.social-icon img {
+    width: 5%;
+    margin: 0 12px;
+    box-shadow: 0 0 20px 0 #7f7f7f;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.input-fields{
+    position: absolute;
+    margin: 0 80px;
+    transition: .5s;
+    width: 300px;
+
+}
+
+#user-id, #email, #pwd-checkbox,#agree, #password, #login-btn{
+    margin-bottom: 45px;
+    padding: 5px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    background: transparent;
+    outline: none;
+}
+
+#login-btn, #register{
+    background: linear-gradient(45deg,#ff105f, #ffad06);
+    margin: auto;
+    width: 210px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 10px 30px !important;
+    font-size: 1em;
+}
+
+span{
+    margin-left: 6px;
+    color: #777; 
+    position: absolute;
+}
+
+#login-form{
+    left: 5px;
+}
+
+#register-form{
+    left: 400px;
+}

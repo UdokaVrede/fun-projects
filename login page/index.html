@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first login page</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="form-container">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle" onclick="login()">Log In</button>
+                <button type="button" class="toggle" onclick="register()">Register</button>
+            </div>
+            <div class="social-icon">
+                <img src="/images/gmail.png" alt="gmail icon" id="gmail">
+                <img src="/images/Octicons-mark-github.svg" alt="github icon" id="">
+            </div>
+            <form id="login-form" class="input-fields">
+                <input type="text" name="user" id="user-id" placeholder="User Id" required>
+                <input type="text" name="user-password" id="password" placeholder="Password" required><br>
+
+                <input type="checkbox" value="remember pwd" id="pwd-checkbox"><span>Remember password</span><br>
+                <button type="submit" id="login-btn">Log In</button>
+            </form>
+
+            <form id="register-form" class="input-fields">
+                <input type="text" name="user" id="user-id" placeholder="User Id" required>
+                <input type="text" name="email" id="email" placeholder="E-mail" required><br>
+
+                <input type="checkbox" value="agreement" id="agree"><span>I agree to the terms & conditions</span><br>
+                <button type="submit" id="register">Register</button>
+            </form>
+        </div>
+    </div>  
+    
+    <script>
+        let x = document.getElementById("login-form");
+        let y = document.getElementById("register-form");
+        let z = document.getElementById("btn");
+
+        const login = () => {
+            x.style.left="0";
+            y.style.left="400px";
+            z.style.left="0";
+        }
+
+        const register = () => {
+            x.style.left="-400px";
+            y.style.left="0";
+            z.style.left="110px";
+        }
+    </script>
+
+</body>
+
+</html> 
